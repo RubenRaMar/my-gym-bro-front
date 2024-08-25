@@ -1,7 +1,7 @@
 import userEvent from "@testing-library/user-event";
 import { screen } from "@testing-library/react";
-import { renderWithProviders } from "../../utils/renderWithProviders";
 import Button from "./Button";
+import { renderWithProviders } from "../../utils/tests/renderWithProviders";
 
 describe("Given a Button component", () => {
   const expectedTextButton = "Show More";

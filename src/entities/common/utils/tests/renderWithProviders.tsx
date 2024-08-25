@@ -8,11 +8,12 @@ import { PreloadedState } from "@reduxjs/toolkit";
 import { PropsWithChildren } from "react";
 import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
-import { RootState, setupStore, store } from "../../../store";
 import { ThemeProvider } from "styled-components";
-import mainTheme from "../styles/themes/mainTheme";
-import GlobalStyle from "../styles/GlobalStyle";
-import appRouter from "../routers/routers";
+import { RootState, setupStore, store } from "../../../../store";
+import appRouter from "../../routers/routers";
+import GlobalStyle from "../../styles/GlobalStyle";
+import mainTheme from "../../styles/themes/mainTheme";
+import IntlProvaiderContainer from "../../i18n/IntlProvaiderContainer/IntlProvaiderContainer";
 
 interface RenderWithProvidersProps {
   ui: React.ReactElement;
@@ -37,11 +38,13 @@ export const renderWithProviders = ({
       <ThemeProvider theme={mainTheme}>
         <GlobalStyle />
         <Provider store={testStore}>
-          {preloadedRoutes ? (
-            <RouterProvider router={appTestRouter} />
-          ) : (
-            <BrowserRouter>{children}</BrowserRouter>
-          )}
+          <IntlProvaiderContainer>
+            {preloadedRoutes ? (
+              <RouterProvider router={appTestRouter} />
+            ) : (
+              <BrowserRouter>{children}</BrowserRouter>
+            )}
+          </IntlProvaiderContainer>
         </Provider>
       </ThemeProvider>
     );
