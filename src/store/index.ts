@@ -4,8 +4,11 @@ import {
   configureStore,
 } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import { sessionDataReduder } from "../entities/common/store/sessionData/sessionDataSlice";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  sessionData: sessionDataReduder,
+});
 
 export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
   return configureStore({

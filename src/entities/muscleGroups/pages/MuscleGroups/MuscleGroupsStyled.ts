@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PageStyled from "../../styles/shared/PageStyled";
+import PageStyled from "../../../common/styles/shared/PageStyled";
 
 const MuscleGroupsStyled = styled(PageStyled)``;
 
