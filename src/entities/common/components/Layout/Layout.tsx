@@ -3,9 +3,11 @@ import ContainerStyled from "../../styles/shared/ContainerStyled";
 
 const Layout = (): React.ReactElement => {
   return (
-    <ContainerStyled>
-      <Outlet />
-    </ContainerStyled>
+    <>
+      <ContainerStyled>
+        <Outlet />
+      </ContainerStyled>
+    </>
   );
 };
 

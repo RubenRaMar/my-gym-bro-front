@@ -24,12 +24,9 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-color: ${themeColors.dark};
-    background-image: url("/images/background.jpg");
-    background-size: contain;
-    backdrop-filter: brightness(0.1);
+    background-color: ${themeColors.mainBackground};
     min-height: 100vh;
-    color: ${themeColors.light};
+    color: ${themeColors.darkGrey};
     font-size: ${themeFontsSize.small};
   }
 

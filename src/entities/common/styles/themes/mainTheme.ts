@@ -3,9 +3,9 @@ import pixelToRem from "../functions/pixelToRem.js";
 
 const mainTheme: DefaultTheme = {
   colors: {
-    primary: "#009a38",
+    primary: "#5c7ba2",
     primaryTransparent: "#009a38c7",
-    secondary: "#d2dc00",
+    secondary: "#fd5936",
     secondaryTransparent: "#d2dc00de",
     tertiary: "#7cbd28",
     tertiaryTransparent: "#747a056b",
@@ -14,7 +14,7 @@ const mainTheme: DefaultTheme = {
     dark: "#000",
     darkTransparent: "#070707bd",
     darkGrey: "#141414",
-    mainBackground: "#0d0d0d",
+    mainBackground: "#f5f5f5",
     secondaryBackground: "#070707",
   },
   typography: {

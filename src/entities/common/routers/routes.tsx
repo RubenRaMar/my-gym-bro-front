@@ -1,8 +1,11 @@
 import { RouteObject, Navigate } from "react-router-dom";
 import App from "../components/App/App";
 import { Suspense } from "react";
-import { LazyMuscleGroupPage } from "./lazyPages/lazyPages";
-import { commonPaths, routerPaths } from "../constants/paths/paths";
+import { LazyMuscleGroupPage } from "../../muscleGroups/pages/lazyPages/lazyPages";
+import {
+  commonPaths,
+  routerPaths,
+} from "../../muscleGroups/constants/paths/paths";
 
 const routes: RouteObject[] = [
   {
