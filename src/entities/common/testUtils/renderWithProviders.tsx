@@ -8,7 +8,7 @@ import { PreloadedState } from "@reduxjs/toolkit";
 import { PropsWithChildren } from "react";
 import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
-import { RootState, setupStore, store } from "../store";
+import { RootState, setupStore, store } from "../../../store";
 import { ThemeProvider } from "styled-components";
 import mainTheme from "../styles/themes/mainTheme";
 import GlobalStyle from "../styles/GlobalStyle";

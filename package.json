@@ -8,6 +8,8 @@
     "build": "tsc && vite build",
     "build:dev": "tsc && vite build -w",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier \"src/**/*.{ts,tsx,json}\" --write",
     "preview": "vite preview",
     "prepare": "husky install",
     "test": "vitest",

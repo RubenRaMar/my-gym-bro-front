@@ -8,19 +8,11 @@ const PageStyled = styled.main`
   padding-block-end: 70px;
 
   h1 {
-    margin-block: 50px;
+    padding-block: 10px;
     text-align: center;
-    color: ${themeColors.tertiary};
-    background-color: ${themeColors.darkTransparent};
+    color: ${themeColors.primary};
     font-size: ${themeFontsSize.large};
-    box-shadow: 0px 0px 11px 11px ${themeColors.darkTransparent};
     border-radius: 15px;
-  }
-
-  .search-feedback {
-    margin-block-start: 10px;
-    background-color: ${themeColors.darkTransparent};
-    text-align: center;
   }
 `;
 

@@ -7,9 +7,9 @@ import "@fontsource/lexend";
 import "@fontsource/playpen-sans";
 import "@fontsource/playpen-sans/500.css";
 import { store } from "./store";
-import appRouter from "./routers/routers";
-import GlobalStyle from "./styles/GlobalStyle";
-import mainTheme from "./styles/themes/mainTheme";
+import mainTheme from "./entities/common/styles/themes/mainTheme";
+import appRouter from "./entities/common/routers/routers";
+import GlobalStyle from "./entities/common/styles/GlobalStyle";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

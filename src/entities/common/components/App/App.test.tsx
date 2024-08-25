@@ -1,5 +1,5 @@
 import { screen, waitFor } from "@testing-library/react";
-import { renderWithProviders } from "../../testUtils/renderWithProviders";
+import { renderWithProviders } from "../../utils/renderWithProviders";
 import App from "./App";
 import routes from "../../routers/routes";
 

@@ -1,5 +1,5 @@
 import { screen } from "@testing-library/react";
-import { renderWithProviders } from "../../testUtils/renderWithProviders";
+import { renderWithProviders } from "../../../common/utils/renderWithProviders";
 import MuscleGroupsPage from "./MuscleGroupsPage";
 
 describe("Given a MuscleGroupPage page", () => {
