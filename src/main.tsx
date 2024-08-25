@@ -10,13 +10,16 @@ import { store } from "./store";
 import mainTheme from "./entities/common/styles/themes/mainTheme";
 import appRouter from "./entities/common/routers/routers";
 import GlobalStyle from "./entities/common/styles/GlobalStyle";
+import IntlProvaiderContainer from "./entities/common/i18n/IntlProvaiderContainer/IntlProvaiderContainer";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={mainTheme}>
-        <GlobalStyle />
-        <RouterProvider router={appRouter} />
+        <IntlProvaiderContainer>
+          <GlobalStyle />
+          <RouterProvider router={appRouter} />
+        </IntlProvaiderContainer>
       </ThemeProvider>
     </Provider>
   </React.StrictMode>
