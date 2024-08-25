@@ -4,10 +4,10 @@ import {
   configureStore,
 } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import { sessionDataReduder } from "../entities/common/store/sessionData/sessionDataSlice";
+import { sessionDataReducer } from "../entities/common/store/sessionData/sessionDataSlice";
 
 const rootReducer = combineReducers({
-  sessionData: sessionDataReduder,
+  sessionData: sessionDataReducer,
 });
 
 export const setupStore = (preloadedState?: PreloadedState<RootState>) => {

@@ -1,6 +1,7 @@
-export interface SupportedLanguages {
+export interface SupportedLanguagesCodes {
   es: "es";
   en: "en";
 }
 
-export type LanguageOptions = SupportedLanguages[keyof SupportedLanguages];
+export type LanguageCodes =
+  SupportedLanguagesCodes[keyof SupportedLanguagesCodes];

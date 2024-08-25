@@ -7,7 +7,7 @@ import moment from "moment";
 const IntlProvaiderContainer = ({
   children,
 }: PropsWithChildren): React.ReactElement => {
-  const { language: currentLanguage } = useAppSelector(
+  const { languageCode: currentLanguage } = useAppSelector(
     (state) => state.sessionData
   );
 
