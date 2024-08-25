@@ -10,7 +10,9 @@ describe("Given a MuscleGroupPage page", () => {
 
       renderWithProviders({
         ui: <MuscleGroupsPage />,
-        preloadedState: { sessionData: { language: supportedLanguages.es } },
+        preloadedState: {
+          sessionData: { languageCode: supportedLanguages.es },
+        },
       });
 
       const heading = screen.getByRole("heading", {
@@ -27,7 +29,9 @@ describe("Given a MuscleGroupPage page", () => {
 
       renderWithProviders({
         ui: <MuscleGroupsPage />,
-        preloadedState: { sessionData: { language: supportedLanguages.en } },
+        preloadedState: {
+          sessionData: { languageCode: supportedLanguages.en },
+        },
       });
 
       const heading = screen.getByRole("heading", {
