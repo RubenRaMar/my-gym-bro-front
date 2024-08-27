@@ -2,6 +2,7 @@ import userEvent from "@testing-library/user-event";
 import { screen } from "@testing-library/react";
 import Button from "./Button";
 import { renderWithProviders } from "../../utils/tests/renderWithProviders";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 describe("Given a Button component", () => {
   const expectedTextButton = "Show More";
@@ -15,6 +16,7 @@ describe("Given a Button component", () => {
             isDisabled={true}
             actionOnClick={actionOnClick}
             text={expectedTextButton}
+            icon={faCaretDown}
           />
         ),
       });

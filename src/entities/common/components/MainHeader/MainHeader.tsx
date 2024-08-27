@@ -35,7 +35,7 @@ const MainHeader = (): React.ReactElement => {
         <li>|</li>
         <li>
           <Button
-            text={supportedLanguages.es.toLocaleUpperCase()}
+            text={supportedLanguages.en.toLocaleUpperCase()}
             actionOnClick={() => handleSelectedLanguage(supportedLanguages.en)}
           />
         </li>
