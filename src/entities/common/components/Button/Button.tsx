@@ -35,7 +35,7 @@ const Button = ({
       type={type}
     >
       {text}
-      {icon && <FontAwesomeIcon className="down-arrow" icon={icon} />}
+      {icon && <FontAwesomeIcon className="icon" icon={icon} />}
     </ButtonStyled>
   );
 };
